@@ -64,50 +64,6 @@ def text_to_speech(text):
     tts.play(filename, 'local', '0', False)     # tts 파일 재생
 
 
-def bible_to_speech(text):
-    filename = "tts.wav"
-    print("\n" + text + "\n")
-    # tts 파일 생성 (*break time: 문장 간 쉬는 시간)
-    tts.second_connection(text, filename)
-    tts.play(filename, 'local', '0', False)     # tts 파일 재생
-
-
-def wait_for(item):
-    while True:
-        print(f"{item} 기다리는 중")
-        break
-
-
-def recording(expect, response):
-    while True:
-        with mic as source:
-            print("say something\n")
-            audio = r.listen(source, timeout=0, phrase_time_limit=5)
-            try:
-                text = r.recognize_google(audio_data=audio, language="ko-KR")
-            except sr.UnknownValueError:
-                print("say again plz\n")
-                continue
-            except sr.RequestError:
-                print("speech service down\n")
-                continue
-
-        # stt 결과 처리 (NLP.py 참고)
-        answer = NLP.nlp_answer(user_said=text, dic=Dic)
-
-        if answer == expect:
-
-            while True:
-                text_to_speech(response)
-                time.sleep(1)
-                break
-        else:
-
-            wait_for(expect)    # DONE 답변 들어올 때까지 stt open 반복
-            continue
-        break
-
-
 def touch_test():
     print(f"touch test")
     total = 0

@@ -35,25 +35,7 @@ class TextToSpeech:
         else:
             print("Error Code:" + rescode)
 
-    def tts_connection2(self, text, filename):
-        # CLOVA auth-key
-        client_id = "3qz5jqx2r0"
-        client_secret = "zwB0Yb4UONPKaOKCjZkhsSl8REuKvJTYK2Esvr41"
-        encText = urllib.parse.quote(text)
-        data = "speaker=nwontak&volume=5&speed=0&pitch=0&format=wav&text=" + encText
-        url = "https://naveropenapi.apigw.ntruss.com/tts-premium/v1/tts"
-        request = urllib.request.Request(url)
-        request.add_header("X-NCP-APIGW-API-KEY-ID", client_id)
-        request.add_header("X-NCP-APIGW-API-KEY", client_secret)
-        response = urllib.request.urlopen(request, data=data.encode('utf-8'))
-        rescode = response.getcode()
-        if (rescode == 200):
-            response_body = response.read()
-            with open(filename, 'wb') as f:
-                f.write(response_body)
-        else:
-            print("Error Code:" + rescode)
-
+    
     # tts, 효과음 등 모든 오디오를 플레이하는 함수
 
     def play(self, filename, out='local', volume='1000', background=True):
