@@ -13,9 +13,11 @@ People who feel lonely or are in a socially isolated situation where they lack m
 3. Robot will identify your emotion to negative or positive emotions 
 4. If it is negative it will randomly select activity and start
 5. If it is positive it will allow you to choose from five activity
-  + Bible verse recommendation(Built in code)
-  + Praise recommendation(Built in code)
+  + Bible verse recommendation (Built in code)
+  + Praise recommendation (Built in code)
   + Psychology game (Built in code) 
   + Health check (ChatGPT)
   + Free talking (ChatGPT)
 6. When activity ends you can decide to do other activities or end the program
+
+#### main.py
