@@ -34,6 +34,7 @@ client_id = "zq90hxu84o" # naver cloud platform - clova sentiment client id
 client_secret = "B6jHEYSIrkCK4kTVbK8l1NXclQAUcnBu7bRXcEoo" # clova sentiment client password
 url = "https://naveropenapi.apigw.ntruss.com/sentiment-analysis/v1/analyze" # naver sentiment url
 
+# chatGPT - api_key
 openai.api_key = "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"
 
 # naver clova sentiment header
