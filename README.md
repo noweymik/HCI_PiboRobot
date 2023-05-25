@@ -2,17 +2,20 @@
 
 ## Spring 2023 (2023.03 ~ 2023.05)
 ###
-### 🟡 Goal
+### ⚡️ Goal 
 Satisfy the human need for communication for those who are socially isolated by using humanoid chatbot Pibo.
-### 🟡 Target user
+### 👤 Target user 
 People who feel lonely or are in a socially isolated situation where they lack meaningful communication with others.
 
-## 🟡 Output
+### 🤛🏻 Output 
 1. Robot will greet you, and it will ask you about your day
 2. You will tell the robot how your day was
-3. Robot will identify your emotion to negative or positive emotions 4. If it is negative it will randomly select activity and start
+3. Robot will identify your emotion to negative or positive emotions 
+4. If it is negative it will randomly select activity and start
 5. If it is positive it will allow you to choose from five activity
-a. Bible verse recommendation(Built in code) b. Praise recommendation(Built in code)
-c. Psychology game (Built in code) d. Health check (ChatGPT)
-e. Free talking (ChatGPT)
+  + Bible verse recommendation(Built in code)
+  + Praise recommendation(Built in code)
+  + Psychology game (Built in code) 
+  + Health check (ChatGPT)
+  + Free talking (ChatGPT)
 6. When activity ends you can decide to do other activities or end the program
