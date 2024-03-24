@@ -45,3 +45,7 @@ The expected benefits of the empathy robot include improved emotional support, r
     
 ### 🙌🏻 Final Results
 Through conversing with the robot, receiving Bible verse recommendations, and doing other functions such as game and health checks, etc, the user can ultimately experience greater comfort and a more positive mood. 
+
+
+### 📑Report
+[Notion 보고서](https://handonghci.notion.site/Emotional-Support-Robot-b5d52235459c4259a83db8b3060e5aff)
